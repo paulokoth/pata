@@ -1,4 +1,8 @@
 
+function myPassword(password,confirm){
+  this.mypassword=password;
+  this.confirmpassword=confirm;
+};
 $(document).ready(function(){
   $("button#logintop").click(function(){
   $(".modal").slideDown();
