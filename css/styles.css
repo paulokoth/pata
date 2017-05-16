@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Bree+Serif|Fjalla+One|Indie+Flower|Josefin+Sans|Noto+Sans|Oswald|Ubuntu');
+
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Baloo', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Josefin Sans', sans-serif;*/
+.jobs {
+  text-align: center;
+  background-color: #f0f2f4;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.jobs img {
+  height: 250px;
+  width: 100%;
+  border-radius: 20px;
+  border: 0px solid #99ccff;
+  padding: 0px;
+  text-align: center;
+  background-color: black;
+  background-size: contain;
+}
+
+.gallery-title {
+  font-size: 36px;
+  color: #3399ff;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #3399ff;
+}
+
+.filter-button {
+  font-size: 21px;
+  padding: 5px;
+  border: 1px solid #66b3ff;
+  border-radius: 7px;
+  background-color: #00004d;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.filter-button:hover {
+  font-size: 21px;
+  border: 1px solid #66b3ff;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: #66b3ff;
+}
+
+.gallery_product {
+  margin-bottom: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .60s ease;
+  background-color: #66b3ff;
+  border: 0px solid black;
+  border-radius: 10px;
+}
+
+a:hover .overlay {
+  opacity: 0.9;
+  color: white;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-weight: normal;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+a:hover .overlay .text {
+  opacity: 1;
+}
+
+.overlay h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  text-decoration-line: underline;
+  color: #003366;
+}
+
+.overlay p {
+  font-size: 19px;
+}
+#photo{
+  width:100%;
+
+}
