@@ -4,20 +4,20 @@ var app=new Vue({
     auth: {
       user: null,
       useremail: '',
-      pass: '';
-      message: '';
-      username:'';
+      pass: '',
+      message: '',
+      username:'',
       hasErrors:false
     }
-  },
+  }
 })
 methods: {
   //autheticate the user
-  login: function(event){
+  login:function (event) {
     var person = this;
     person.auth.message= '';
     person.auth.hasErrors = false;
-    if(person.auth.useremail === '')||person.auth.pass === ''){
+    if((person.auth.useremail === '')||(person.auth.pass === '')){
       alert('Please provide the email and the password');
       return;
     }
@@ -34,7 +34,7 @@ methods: {
     var person =this;
     person.auth.message= '';
     person.auth.hasErrors = false;
-    if(person.auth.useremail === '')||person.auth.pass === ''){
+    if((person.auth.useremail === '')||(person.auth.pass === '')){
       alert('Please provide the email and the password');
       return;
     }
