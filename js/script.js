@@ -31,9 +31,12 @@ $(document).ready(function(){
   $("form#signupform").submit(function(event){
     event.preventDefault();
     $("li.remove").remove();
-  var inputtedPassword=String(parseInt($("input#pass").val()));
-  var inputtedConfirmation=String(parseInt($("input#confirm").val()));
-  var newPassword = new myPassword(inputtedPassword,inputtedConfirmation);
+    var inputtednames=$("input#names").val();
+    var inputedEmails=$("input#useremail").val();
+    var inputedEmails=$("input#usernames").val();
+    var inputtedPassword=String(parseInt($("input#pass").val()));
+    var inputtedConfirmation=String(parseInt($("input#confirm").val()));
+    var newPassword = new myPassword(inputtedPassword,inputtedConfirmation);
   $("ul#confirmed").append("<li class='remove'>" + newPassword.confirmation() + "</li>");
    });
   $("#closeit").click(function(){
