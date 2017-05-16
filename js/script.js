@@ -1,6 +1,6 @@
 //back-end
   // Initialize Firebase
-  var config = {
+  /*var config = {
     apiKey: "AIzaSyCIRWzLDlKIE2E0ScNQDIToOj7oWTDqYYw",
     authDomain: "test-58e4b.firebaseapp.com",
     databaseURL: "https://test-58e4b.firebaseio.com",
@@ -10,13 +10,15 @@
   };
   firebase.initializeApp(config);
   // get database reference
-
-function User(names,email,username){
-  this.userFullnames=names;
-  this.userEmail=email;
-  this.usersUsername=username;
-  this.userspassword=[];
-};
+  var dbRef = new Firebase('https://test-58e4b.firebaseio.com');
+  var UsersDetailsRef = dbRef.child('UsersDetails');
+  */
+   function User(names,email,username){
+    this.userFullnames=names;
+    this.userEmail=email;
+    this.usersUsername=username;
+    this.userspassword=[];
+  };
 //object properties for password
 function myPassword(password,confirm){
   this.mypassword=password;
