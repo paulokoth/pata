@@ -33,10 +33,12 @@ $(document).ready(function(){
     $("li.remove").remove();
     var inputtednames=$("input#names").val();
     var inputedEmails=$("input#useremail").val();
-    var inputedEmails=$("input#usernames").val();
+    var inputtedUsername=$("input#username").val();
+    var newUser=new User(inputtednames,inputedEmails,inputtedUsername);
     var inputtedPassword=String(parseInt($("input#pass").val()));
     var inputtedConfirmation=String(parseInt($("input#confirm").val()));
     var newPassword = new myPassword(inputtedPassword,inputtedConfirmation);
+    newUser.userspassword.push(newPassword);
   $("ul#confirmed").append("<li class='remove'>" + newPassword.confirmation() + "</li>");
    });
   $("#closeit").click(function(){
