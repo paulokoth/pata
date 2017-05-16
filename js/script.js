@@ -15,6 +15,7 @@ $(document).ready(function(){
   $("form#signup").submit(function(event){
   var inputtedPassword=String(parseInt($("input#password")).val());
   var inputtedConfirmation=String(parseInt($("input#confirm")).val());
+  var newPassword = new myPassword(inputtedPassword,inputtedConfirmation);
    });
   $("#closeit").click(function(){
     $(".modal2").hide();
