@@ -1,5 +1,11 @@
 //back-end
-//object properties
+function User(names,email,username){
+  this.userFullnames=names;
+  this.userEmail=email;
+  this.usersUsername=username;
+  this.userspassword=[];
+};
+//object properties for password
 function myPassword(password,confirm){
   this.mypassword=password;
   this.confirmpassword=confirm;
@@ -17,7 +23,7 @@ $(document).ready(function(){
   $("button#logintop").click(function(){
   $(".modal").slideDown();
   $("#close").click(function(){
-    $(".modal").hide();
+    $(".modal").slideUp();
   });
   });
   $("button#signup").click(function(){
@@ -31,7 +37,7 @@ $(document).ready(function(){
   $("ul#confirmed").append("<li class='remove'>" + newPassword.confirmation() + "</li>");
    });
   $("#closeit").click(function(){
-    $(".modal2").hide();
+    $(".modal2").slideUp();
   });
   });
   });

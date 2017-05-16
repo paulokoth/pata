@@ -87,3 +87,6 @@
   color:red;
   font-size: 20px;
 }
+#logup ul{
+  list-style-type: none;
+}
