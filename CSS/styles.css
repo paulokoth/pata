@@ -1,0 +1,89 @@
+
+#topnav{
+  padding :24px 26px;
+  background: gray;
+}
+#topnav button{
+  font-size: 20px;
+}
+#body{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+}
+.modal{
+  display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#outerbox{
+  background-color: grey;
+  margin-left: 20%;
+  margin-top: 5%;
+  position: absolute;
+  border-radius: 10px;
+  padding-bottom: 40px;
+}
+#outerbox h3{
+  text-align: center;
+  color: white;
+}
+#close {
+  float: right;
+  color:red;
+  font-size: 20px;
+}
+#user{
+ padding-left: 100px;
+ font-size: 30px;
+ color: aquamarine;
+}
+#login
+{
+  background-color: white;
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+.modal2{
+  display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#logup{
+  background-color: ;
+  margin-top: 3%;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding-top: 5px;
+  padding-bottom:20px;
+}
+#logup h3{
+  text-align: center;
+  color: black;
+}
+#logup span {
+  float: right;
+  color:red;
+  font-size: 20px;
+}
