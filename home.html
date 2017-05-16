@@ -5,7 +5,7 @@
   <link href="CSS/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script src="js/jquery.js"></script>
   <script src="js/script.js"></script>
-  <link href="CSS/bootstrap-3.3.7-dist/js/bootstrap.min.js" rel="stylesheet" type="text/css">
+  <srcipt src="CSS/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
   <title>log in page</title>
 </head>
 <body>
@@ -47,7 +47,7 @@
         <p><span class="glyphicon glyphicon-remove" id="closeit"></span></p><br />
           <h3>log in</h3>
           <div class="col-md-10 col-md-offset-1">
-            <form >
+            <form id="signupform" >
               <div class="row">
                 <label for="names">Full names</label>
                 <input type="text" class="form-control" id="names">
@@ -62,15 +62,18 @@
               </div>
               <div class="row">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" class="form-control" id="pass">
               </div>
               <div class="row">
                 <label for="confirm">Confirm Password</label>
                 <input type="password" class="form-control" id="confirm">
               </div>
               <div class="row">
+                <ul id="confirmed">
+                </ul>
+              </div>
+              <div class="row">
                 <button class="btn btn-success" type="submit">Sign up</button>
-                <button class="btn btn-success" type="submit" id="loginmodal">Log in</button>
               </div>
             </form>
           </div>
