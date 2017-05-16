@@ -1,4 +1,16 @@
 //back-end
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCIRWzLDlKIE2E0ScNQDIToOj7oWTDqYYw",
+    authDomain: "test-58e4b.firebaseapp.com",
+    databaseURL: "https://test-58e4b.firebaseio.com",
+    projectId: "test-58e4b",
+    storageBucket: "test-58e4b.appspot.com",
+    messagingSenderId: "815891999724"
+  };
+  firebase.initializeApp(config);
+  // get database reference
+
 function User(names,email,username){
   this.userFullnames=names;
   this.userEmail=email;
@@ -18,6 +30,7 @@ myPassword.prototype.confirmation = function () {
   else{
     return true;
   }
+  //prototype for login details
 };
 $(document).ready(function(){
   $("button#logintop").click(function(){
