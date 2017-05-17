@@ -55,7 +55,7 @@ $(document).ready(function(){
     var newPassword = new myPassword(inputtedPassword,inputtedConfirmation);
     newUser.userspassword.push(newPassword);
   $("ul#confirmed").append("<li class='remove'>" + newPassword.confirmation() + "</li>");
-   });
+ });
   $("#closeit").click(function(){
     $(".modal2").slideUp();
   });
