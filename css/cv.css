@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Bree+Serif|Fjalla+One|Indie+Flower|Josefin+Sans|Noto+Sans|Oswald|Ubuntu');
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+li {
+  text-decoration: none;
+}
+
+.btn-primary a {
+  text-decoration: none;
+}
+
+btn-primary a:hover {
+  text-decoration: none;
+}
+
+.container-fluid {
+  background-color: #33bbff;
+  height: 110px;
+  color: white;
+  text-align: center;
+}
+
+.container-fluid p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+}
+
+.container {
+  background-color: white;
+  color: #33bbff;
+  font-size: 21px;
+}
+
+.btn-primary {
+  float: right;
+  background-color: #f2f2f2;
+  color: black;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #33bbff;
+  color: white;
+}
+
+.container img {
+  height: 70px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.container li {
+  padding: 10px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.footer ul li {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  width: 20%;
+}
+
+.footer {
+  background-color: #33bbff;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  height: 70px;
+  text-align: center;
+}
+
+.footer li a {
+  color: white;
+}

@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Bree+Serif|Ranga|Coming+Soon|Fjalla+One|Indie+Flower|Josefin+Sans|Noto+Sans|Ubuntu|Calligraffitti|Open+Sans|Oswald|');
+
+/*GOOGLE FONTS*/
+
+
+/*font-family: 'Oswald', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Baloo', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Josefin Sans', sans-serif;*/
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+/*NAV BAR START*/
+
+nav {
+  background-color: transparent;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.main {
+  font-family: 'Josefin Sans', cursive;
+  font-size: 25px;
+}
+
+.main a {
+  color: white;
+}
+
+div ul li {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.main a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.sign {
+  text-align: right;
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main li {
+  text-align: left;
+  font-size: 24px;
+  text-decoration: none;
+  color: #0088cc;
+  font-weight: normal;
+}
+
+
+/*END OF THE NAV BAR*/
+
+#topnav {
+  padding: 24px 26px;
+  background: gray;
+}
+
+#topnav button {
+  font-size: 20px;
+}
+
+#loginform {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  color: #33bbff;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  padding-top: 100px;
+  /* Location of the box */
+  padding-left: 20%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/ opacity */
+}
+
+#login h3 {
+  text-align: center;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+}
+
+#close {
+  left: 90%;
+  color: white;
+  font-size: 20px;
+}
+
+#close:hover {
+  color: red;
+}
+
+#user {
+  color: aquamarine;
+  font-size: 40px;
+}
+
+#login {
+  background-color: transparent;
+  padding: 10px;
+}
+
+.btn-primary {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#logintop {
+  font-size: 20px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#signup {
+  font-size: 20px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#signupbtn {
+  font-size: 20px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#loginbtn {
+  font-size: 20px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+/*END OF LOGIN MODAL*/
+
+.modal2 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  padding-top: 50px;
+  /* Location of the box */
+  padding-left: 20%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/ opacity */
+}
+
+
+}
+#logup {
+  background-color: grey;
+  border-radius: 10px;
+  padding: 10px;
+  left: 10%;
+}
+#logup h3 {
+  text-align: center;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  text-decoration: underline;
+}
+#logup ul {
+  list-style-type: none;
+}
+#signupform {
+  color: #33bbff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+}
+#closeit {
+  color: white;
+  left: 90%;
+  font-size: 20px;
+}
+#closeit:hover {
+  color: red;
+}
+
+/*END OF NAV BAR*/
+
+/*START OF LANDING*/
+.toplanding {
+  background: url('../img/maji.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 900px;
+  text-align: center;
+  background-color: #66e0ff;
+  background-blend-mode: multiply;
+}
+.ourdetails {
+  margin-top: 200px;
+}
+.ourdetails img {
+  height: 70px;
+  width: 80px;
+}
+.ourdetails h1 {
+  font-size: 150px;
+  color: white;
+  font-family: 'Coming Soon', cursive;
+  opacity: 0.9;
+  text-shadow: 3px 4px 6px black;
+  font-weight: 600;
+}
+.ourdetails p {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Calligraffitti', cursive;
+}
+
+/*END OF LANDING*/
+
+/*START OF CAROUSEL*/
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.cartext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/*END OF CAROUSEL*/
+
+/*START OF JOBS DIV*/
+.jobs {
+  text-align: center;
+  background-color: #f0f2f4;
+}
+.jobs img {
+  height: 250px;
+  width: 100%;
+  border-radius: 20px;
+  border: 0px solid #99ccff;
+  padding: 0px;
+  text-align: center;
+  background-color: black;
+  background-size: contain;
+}
+.gallery-title {
+  font-size: 36px;
+  color: #3399ff;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #3399ff;
+}
+.filter-button {
+  font-size: 21px;
+  padding: 5px;
+  border: 1px solid #66b3ff;
+  border-radius: 7px;
+  background-color: #00004d;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+.filter-button:hover {
+  font-size: 21px;
+  border: 1px solid #66b3ff;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: #66b3ff;
+}
+.gallery {
+  margin-bottom: 50px;
+}
+
+/*OVERLAY BOX-contains the hover effect*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  opacity: 0;
+  transition: .60s ease;
+  background-color: #66b3ff;
+  border: 0px solid black;
+  border-radius: 10px;
+}
+a:hover .overlay {
+  opacity: 0.9;
+  color: white;
+}
+.text {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  font-weight: normal;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 1;
+}
+a:hover .overlay .text {
+  opacity: 1;
+}
+.overlay h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  text-decoration-line: underline;
+  color: #003366;
+}
+.overlay p {
+  font-size: 19px;
+}
+
+/*end of overlay*/
+#photo {
+  width: 100%;
+}
+
+/*END OF THE JOB DIV*/
+.footer {
+  font-family: 'Ubuntu', sans-serif;
+  color: #f2f2f2;
+  font-size: 20px;
+  position: relative;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(41, 37, 40);
+  white-space: nowrap;
+  height: 100px;
+  padding: 10px;
+}
+.footer ul li {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  width: 20%;
+}

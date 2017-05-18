@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  <meta http-equiv="X-UA-compatible" Content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="icon" type="image/gif" href="img/search-9-512.gif">
+</head>
+
+<body>
+
+  <!---NAV BAR START--->
+  <div class="container-fluid top-bar">
+    <div class="row">
+      <div class="col-xs-8 main">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Faq</a></li>
+
+        </ul>
+      </div>
+      <div class="col-xs-4 sign">
+        <ul>
+
+          <li><button class="btn btn-primary" id="logintop">Login</button></li>
+          <li><button class="btn btn-primary" id="signup">Sign Up</button></li>
+        </ul>
+      </div>
+
+      <!---END OF NAV BAR--->
+
+
+      <!--START OF LANDING--->
+      <div class="container-fluid toplanding">
+        <div class="ourdetails">
+          <img src="img/search-3-512.png">
+          <h1>P&nbsp;A&nbsp;T&nbsp;A.</h1>
+          <p>Where your skill sells you.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="mymodal" class="modal">
+          <div class="col-md-5 col-md-offset-2" id="login">
+            <p><span class="glyphicon glyphicon-remove" id="close"></span></p><br />
+            <h3><span class="glyphicon glyphicon-user" id="user"> </span>&nbsp; &nbsp;LOG IN</h3>
+            <form id="loginform">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password">
+              <button type="submit" class="btn btn-primary" id="loginbtn">log in </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div id="mymodal2" class="modal2">
+            <div class="col-md-6 col-md-offset-2" id="logup">
+              <p><span class="glyphicon glyphicon-remove" id="closeit"></span></p><br />
+              <h3>SIGN UP</h3>
+              <form id="signupform">
+                <label for="names">Full names</label>
+                <input type="text" class="form-control" id="names">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="useremail">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="pass">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm">
+                <button class="btn btn-primary" type="submit" id="signupbtn">Sign up</button>
+                <ul id="confirmed">
+                </ul>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var modal = document.getElementById('mymodal');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+      var modal2 = document.getElementById('mymodal2');
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    };
+  </script>
+
+  <!--END OF SIGN UP MODAL-->
+
+  <!--START OF CAROUSEL-->
+
+
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/cooks.png" style="width:100%; height:500px;">
+      <div class="cartext">Capion Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/paul.jpg" style="width:100%; height:500px;">
+      <div class="cartext">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/driver.jpg" style="width:100%; height:500px;">
+      <div class="cartext">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/farmworkers.jpg" style="width:100%; height:500px;">
+      <div class="cartext">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/mamanguo.jpg" style="width:100%; height:500px;">
+      <div class="cartext">Caption Three</div>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <!--END OF CAROUSEL-->
+
+
+  <!--START OF JOBS DIV-->
+
+
+  <div class="container-fluid jobs">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="gallery-title">Where do you need help?</h1>
+      </div>
+    </div>
+    <button class="filter-button" data-filter="all">&nbsp; &nbsp; All &nbsp; &nbsp; </button>
+    <button class="filter-button" data-filter="construction">Construction</button>
+    <button class="filter-button" data-filter="household">Household</button>
+    <button class="filter-button" data-filter="catering">Catering</button>
+    <button class="filter-button" data-filter="transport">Transport</button>
+    <button class="filter-button" data-filter="it-skills">IT guys</button>
+    <button class="filter-button" data-filter="farming">Farming</button>
+    <button class="filter-button" data-filter="graphics">Graphic Design</button>
+    <button class="filter-button" data-filter="entertainment">Entertainment</button>
+    <button class="filter-button" data-filter="delivery">Delivery</button>
+    <button class="filter-button" data-filter="fitness">Fitness</button>
+
+    <div align="center">
+    </div>
+    <br>
+
+    <!--CONSTRUCTION-->
+    <a href="plumber.html">
+      <div class="gallery col-md-4 filter construction">
+        <img src="img/plumbers.png" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>PLUMBING</h1>
+            <p>We bring you all the top plumbers near you.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="mjengo.html">
+      <div class="gallery col-md-4 filter construction">
+        <img src="img/mjengo.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>MJENGO</h1>
+            <p>Pata watu wa mjengo hapa.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="gallery col-md-4 filter construction">
+        <img src="img/carpenter.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>FUNDI</h1>
+            <p>We connect you with your closest fundi all from the comfort of your home.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="gallery col-md-4 filter construction">
+        <img src="img/welders.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>CHOMELEA</h1>
+            <p>For all your welding and metal work.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="gallery col-md-4 filter construction">
+        <img src="img/electrician.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>ELECTRICIANS</h1>
+            <p>Find the top wiring eperts for your wiring needs.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!---HOUSEHOLD-->
+    <a href="househelp.html">
+      <div class="gallery col-md-4 filter household">
+        <img src="img/househelp.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>HOUSEHELPS</h1>
+            <p>find househelps here.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="mamanguo.html">
+      <div class="gallery col-md-4 filter household">
+        <img src="img/mamawanguo.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>Mama wa Nguo</h1>
+            <p>Dont have someone to do your laundry? find one here.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="nanny.html">
+      <div class="gallery col-md-4 filter household">
+        <img src="img/nanny.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>Nanny Services</h1>
+            <p>Find nannies and babysitters for when you are out.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="gallery col-md-4 filter household">
+        <img src="img/daycare.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>DAY CARE</h1>
+            <p>Site for the top day cares around you.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+
+    <!---CATERING--->
+    <a href="cooks.html">
+      <div class="gallery col-md-4 filter catering">
+        <img src="img/cooks.png" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>COOKS</h1>
+            <p>Choose from a variety of great chefs for your cooking needs.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="cateringequipment.html">
+      <div class="gallery col-md-4 filter catering">
+        <img src="img/equipment.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>HIRE EQUIPMENT</h1>
+            <p>Here, you can find the top people who hire catering equipments for your events.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="caterers.html">
+      <div class="gallery col-md-4 filter catering">
+        <img src="img/personnel.jpg " class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>CATERING PERSONNEL</h1>
+            <p>Waiters, Ushers, washers available for you.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!--MOVING SERVICES-->
+    <a href="drivers.html">
+      <div class="gallery col-md-4 filter transport">
+        <img src="img/driver.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>DRIVERS</h1>
+            <p>If you need a driver for your car, you can find one here.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="cars.html">
+      <div class="gallery col-md-4 filter transport">
+        <img src="img/carhire.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>RENT CARS</h1>
+            <p>See the Available car renters.no need to go out!</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!---IT SKILLS-->
+    <a href="developers.html">
+      <div class="gallery col-md-4 filter it-skills">
+        <img src="img/devloper.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>WEB DEVELOPERS</h1>
+            <p>Choose from a variety of web developers to make your website.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="networkers.html">
+      <div class="gallery col-md-4 filter it-skills">
+        <img src="img/security.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>NETWORKERS</h1>
+            <p>Find network security providers.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="gallery col-md-4 filter it-skills">
+        <img src="img/testers.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>PROGRAM TESTERS</h1>
+            <p>Want test users your program? Find them here.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="gallery col-md-4 filter it-skills">
+        <img src="img/typists.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>TYPISTS</h1>
+            <p>Get people to type your long work for you.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!--FARMING-->
+    <a href="farmanager.html">
+      <div class="gallery col-md-4 filter farming">
+        <img src="img/farmmanager.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>FARM MANAGERS</h1>
+            <p>Site for those in need of farm managers and assistants.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="farmworker.html">
+      <div class="gallery col-md-4 filter farming">
+        <img src="img/farmworkers.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>FARM WORKERS</h1>
+            <p>providing a good labour force for your farm.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="farmtools.html">
+      <div class="gallery col-md-4 filter farming">
+        <img src="img/farmmachines.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>FARMING EQUIPMENT</h1>
+            <p>Choose from a wide array of farming equipment that you may need.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!--GRAPHIC DESIGNERS-->
+    <a href="graphics.html">
+      <div class="gallery col-md-4 filter graphics">
+        <img src="img/posters.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>GET POSTERS</h1>
+            <p>From placards to event posters, Find designers here.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="photographers.html">
+      <div class="gallery col-md-4 filter graphics">
+        <img src="img/photographers.jpg" class="graphics" id="photo">
+        <div class="overlay">
+          <div class="text">
+            <h1>PHOTOGRAPHERS</h1>
+            <p>Capturing that special moment in your life.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="pimp.html">
+      <div class="gallery col-md-4 filter graphics">
+        <img src="img/pimp.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>PIMP YOUR RIDE</h1>
+            <p>Find the best "car artists" for your custom look.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="gallery col-md-4 filter graphics">
+        <img src="img/cards.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>CARD DESIGNERS</h1>
+            <p>find top card designers for your business, birthdays etc cards.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!--ENTERTAINMENT-->
+    <a href="internet.html">
+      <div class="gallery col-md-4 filter entertainment">
+        <img src="img/internet.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>INTENET SERVICES</h1>
+            <p>We hook you up with internet providers.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="cable.html">
+      <div class="gallery col-md-4 filter entertainment">
+        <img src="img/cable.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>CABLE SERVICES</h1>
+            <p>Get a cable connection for yout tv.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="gallery col-md-4 filter entertainment">
+        <img src="img/movies.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>MOVIES</h1>
+            <p>Movie delivery at your doorstep.Find vendors here.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!--DELIVERY-->
+    <a href="water.html">
+      <div class="gallery col-md-4 filter delivery">
+        <img src="img/maji.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>MTU WA MAJI</h1>
+            <p>Site to connect you with your nearest water for your water needs.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="gas.html">
+      <div class="gallery col-md-4 filter delivery">
+        <img src="img/gas.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>GAS PROVIDER</h1>
+            <p>Verified Gas cylinder providers.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!---FITNESS-->
+    <a href="fitness.html">
+      <div class="gallery col-md-4 filter fitness">
+        <img src="img/trainer.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>PERSONAL TRAINERS</h1>
+            <p>Getting into shape has never been this easy.Find a well trainer here.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="gallery col-md-4 filter fitness">
+        <img src="img/gym.jpg" class="img-responsive" id="blur">
+        <div class="overlay">
+          <div class="text">
+            <h1>GYM EQUIPMENT</h1>
+            <p>Find gym equipment for your work-out joint.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+
+  <!--END OF JOBS DIV-->
+
+  <!--FOOTER--->
+  <div class="footer">
+    <ul>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Referrals</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Contact us</a></li>
+
+    </ul>
+  </div>
+
+
+</body>
+
+</html>
