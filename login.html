@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="CSS/styles.css" rel="stylesheet" type="text/css">
+  <link href="CSS/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="js/jquery.js"></script>
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <srcipt src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
+  <srcipt src="CSS/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+  <script src="JS/scripts.js"></script>
+  <srcipt src="CSS/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+  <title>log in page</title>
+</head>
+<body>
+  <div class="row" id="topnav">
+    <div class="row">
+      <form id="loginform">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-8" >
+             <label for="useremail">User Email</label>
+             <input type="text" class="form-control" id="useremail">
+             <label for="password">Password</label>
+             <input type="password" class="form-control" id="pass">
+          </div>
+       </div>
+      </form>
+    </div>
+    <div class="col-md-1 col-md-offset-9">
+      <button class="btn btn-primary"id="quickstart-sign-in" type="submit" name="signin">log in </button>
+    </div>
+  <!--  <div >
+      <button type="submit" class="btn btn-success" id="signup">sign up</button>
+    </div>
+  -->
+</div>
+   <div class="quickstart-user-details-container" id="loggedInUser">
+        sign-in as:<br /><span id="quickstart-sign-in-status">email</span><br />
+  </div>
+  </body>
+  </html>

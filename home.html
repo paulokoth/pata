@@ -3,16 +3,29 @@
 <head>
   <link href="CSS/styles.css" rel="stylesheet" type="text/css">
   <link href="CSS/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="js/jquery.js"></script>
-  <script src="js/script.js"></script>
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <srcipt src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
   <srcipt src="CSS/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+  <script src="js/script.js"></script>
+  <script src="js/send.js"></script>
+  <srcipt src="CSS/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+    <script>
+    function redirect() {
+  window.location.replace("pata-victor/fip5/index.html");
+  return false;
+}
+</script>
   <title>log in page</title>
 </head>
 <body>
   <div>
   <div class="row" id="topnav">
     <div class="col-md-1 col-md-offset-7">
-      <button class="btn btn-success" id="logintop">log in</button>
+      <button class="btn btn-success"id="logintop" class= "btn btn-primary mdl-button mdl-js-button mdl-button--raised">log in</button>
     </div>
     <div class="col-md-1">
       <button type="submit" class="btn btn-success" id="signup">sign up</button>
@@ -20,6 +33,7 @@
   </div>
   <div class="container">
     <div class="row">
+    <div class="form-hide">
       <div id="mymodal" class="modal">
       <div class="col-md-5" id="outerbox" >
         <p><span class="glyphicon glyphicon-remove" id="close"></span></p><br />
@@ -29,13 +43,14 @@
               <div class="row">
                 <span class="glyphicon glyphicon-user" id="user"></span>
               </div>
-              <form id="loginform">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username">
+              <form id="loginform" onsubmit="return redirect()">
+                <label for="useremail">User Email</label>
+                <input type="text" class="form-control" id="useremail">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
-                <button type="submit" class="btn btn-primary" id="logingoogle">log in </button>
-                <button type="submit" class="btn btn-primary" id="google">log in with google </button>
+                <input type="password" class="form-control" id="pass">
+                <button type="submit" class="btn btn-primary mdl-button mdl-js-button mdl-button--raised" id="sign-in" name="signin">log in </button>
+            <!--  <button class="btn btn-primary"
+              id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button> -->
               </form>
             </div>
           </div>
@@ -43,66 +58,56 @@
     </div>
     </div>
   </div>
+  </div>
   <div class="container">
     <div class="row">
       <div id="mymodal2" class="modal2">
       <div class="col-md-5 col-md-offset-2" id="logup">
         <p><span class="glyphicon glyphicon-remove" id="closeit"></span></p><br />
-          <h3>log in</h3>
+          <h3>Sign up</h3>
           <div class="col-md-10 col-md-offset-1">
-            <form id="signupform" method="post" name="contactForm">
+            <form id="signupform"  name="contactForm">
               <div class="row">
                 <label for="names">Full names</label>
                 <input type="text" class="form-control" id="names">
               </div>
               <div class="row">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="useremail">
+                <input type="email" class="form-control" id="useremail" name="email">
               </div>
               <div class="row">
-                <label for="username">Username</label>
+              <!--  <label for="username">Username</label>
                 <input type="text" class="form-control" id="username">
               </div>
+            -->
               <div class="row">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="pass">
+                <input type="password" class="form-control col-md-8" id="pass" name="password">
               </div>
-              <div class="row">
+            <!-- <div class="row">
                 <label for="confirm">Confirm Password</label>
                 <input type="password" class="form-control" id="confirm">
               </div>
+            -->
               <div class="row">
                 <ul id="confirmed">
                 </ul>
               </div>
               <div class="row">
-                <button class="btn btn-success addValue" type="submit">Sign up</button>
+                <button class="btn btn-success addValue" type="submit" id="sign-up" name="signup">Sign up</button>
+               <button class="mdl-button mdl-js-button mdl-button--raised btn-success"
+                disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <ul id="contacts" class="list-group">
-          <!-- Conatct Object li.list-group-item.contact will be added here by js -->
-     </ul>
-  </div>
-  <srcipt src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" ></script>
-  <srcipt src="CSS/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
-  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyCIRWzLDlKIE2E0ScNQDIToOj7oWTDqYYw",
-      authDomain: "test-58e4b.firebaseapp.com",
-      databaseURL: "https://test-58e4b.firebaseio.com",
-      projectId: "test-58e4b",
-      storageBucket: "test-58e4b.appspot.com",
-      messagingSenderId: "815891999724"
-    };
-    firebase.initializeApp(config);
-  </script>
-  <script src="js/send.js"></script>
+    <div class="quickstart-user-details-container" id="loggedInUser">
+            sign-in as:<br /><span id="sign-in-status">email</span><br />
+      <button class="btn btn-success mdl-button mdl-js-button mdl-button--raised " type="submit" id="sign-out" name="signout">Sign out</button>
+
+</div>
   <script>
   var modal=document.getElementById('mymodal');
    window.onclick = function(event) {
