@@ -12,19 +12,28 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="../js/report.js"></script>
 	<script>
-    function received() {
-  alert("you report has been received");
-     var modal=document.getElementById('mymodal');
-     modal.style.display="none";
-     var theMessage=document.getElementById('form#messaging');
-     theMessage.reset();
-  return false;
-  }
-    </script>
+		function received() {
+			alert("you report has been received");
+			var modal = document.getElementById('mymodal');
+			modal.style.display = "none";
+			var theMessage = document.getElementById('form#messaging');
+			theMessage.reset();
+			return false;
+		}
+	</script>
 </head>
 
 <body>
 	<div class="container mainbody">
+		<div class="container main">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Faq</a></li>
+
+			</ul>
+		</div>
 		<div class="row top">
 			<h1>WORK INFORMATION</h1>
 		</div>
@@ -35,14 +44,15 @@
 			</div>
 			<div class="col-md-8 about">
 				<h1>Cater Wairimu.</h1>
-	<!--ADD NAME HERE-->
+				<!--ADD NAME HERE-->
 				<ol>
 
-          <li><strong>Profession:</strong>Hires out utensils and outside catering equipement.</li>
-          <li><strong>Experience:</strong>Sorted out several small scale weddings.</li>
-          <li><strong>City:</strong>Nairobi</li>
-          <li><strong>Phone Number:</strong>0700123456</li>
-        </ol><!--ADD SOME INFO-->
+					<li><strong>Profession:</strong>Hires out utensils and outside catering equipement.</li>
+					<li><strong>Experience:</strong>Sorted out several small scale weddings.</li>
+					<li><strong>City:</strong>Nairobi</li>
+					<li><strong>Phone Number:</strong>0700123456</li>
+				</ol>
+				<!--ADD SOME INFO-->
 
 			</div>
 		</div>
@@ -51,16 +61,22 @@
 			<h1>MY WORK</h1>
 			<p>Some of the work i've done.</p>
 			<div class="col-md-4 workpic">
-				<img src="../img/catering-equipment-rentals.jpg"width="300" height="300"> <!--ADD WORK RELATED IMAGE HERE-->
-				<p>I provide utensils.</p><!--brief description-->
+				<img src="../img/catering-equipment-rentals.jpg" width="300" height="300">
+				<!--ADD WORK RELATED IMAGE HERE-->
+				<p>I provide utensils.</p>
+				<!--brief description-->
 			</div>
 			<div class="col-md-4 workpic">
-				<img src="../img/cater2.jpg"width="300"height="300"><!--ADD WORK RELATED IMAGE HERE-->
-				<p>Smaller event tables.</p><!--brief description-->
+				<img src="../img/cater2.jpg" width="300" height="300">
+				<!--ADD WORK RELATED IMAGE HERE-->
+				<p>Smaller event tables.</p>
+				<!--brief description-->
 			</div>
 			<div class="col-md-4 workpic">
-				<img src="../img/KitchenExploringFoods1.jpg"width="300"height="300"><!--ADD WORK RELATED IMAGE HERE-->
-				<p>Dinner tables..</p><!--brief description-->
+				<img src="../img/KitchenExploringFoods1.jpg" width="300" height="300">
+				<!--ADD WORK RELATED IMAGE HERE-->
+				<p>Dinner tables..</p>
+				<!--brief description-->
 			</div>
 		</div>
 
@@ -75,34 +91,35 @@
 		<div class="row report">
 			<p>Any disputes, report here</p>
 			<button class="report-button" id="message">Report</button>
-            <div class="messagemodal" id="mymodal">
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-6" id="messagebox">
-                        <h3>Describe your issue in brief</h3>
-                          <form id"messaging" method="post" onsubmit="return received()">
-                                <label>Your email </label>
-                                <input type="email" class="form-control">
-                                <label>Your description</label>
-                              <textarea type="text" class="form-control"></textarea>
-                              <button class="btn btn-primary" type="submit">send</button>
-                              <div>
-                                  <ul id="emptymessage">
-                                  </ul>
-                              </div>
-                          </form>
-                    </div>
-                </div>
-            </div>
+			<div class="messagemodal" id="mymodal">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-6" id="messagebox">
+						<h3>Describe your issue in brief</h3>
+						<form id "messaging" method="post" onsubmit="return received()">
+							<label>Your email </label>
+							<input type="email" class="form-control">
+							<label>Your description</label>
+							<textarea type="text" class="form-control"></textarea>
+							<button class="btn btn-primary" type="submit">send</button>
+							<div>
+								<ul id="emptymessage">
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</div>
 </body>
 <script>
-var modal=document.getElementById('mymodal');
-window.onclick = function(event){
-    if(event.target == modal){
-        modal.style.display="none";
-    }
-};
+	var modal = document.getElementById('mymodal');
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	};
 </script>
+
 </html>

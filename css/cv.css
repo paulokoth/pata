@@ -1,4 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo|Bree+Serif|Fjalla+One|Indie+Flower|Josefin+Sans|Noto+Sans|Oswald|Ubuntu');
+.main {
+  font-family: 'Josefin Sans', cursive;
+  max-height:30px;
+}
+
+.main a {
+  color: grey;
+  font-weight: bold;
+}
+
+div ul li {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 4px;
+}
+
+.main a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.sign {
+  text-align: right;
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main li {
+  text-align: left;
+  font-size: 20spx;
+  text-decoration: none;
+  color: #0088cc;
+  font-weight: normal;
+  width: 20%;
+
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #f2f2f2;
@@ -12,6 +50,8 @@ h1 {
 
 li {
   text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
 }
 
 .btn-primary a {

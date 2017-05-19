@@ -7,25 +7,34 @@
 	<title>PATA ltd.</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="../css/profile.css" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/gif" href="img/search-9-512.gif">
+	<link rel="icon" type="image/gif" href="../img/search-9-512.gif">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="../js/report.js"></script>
 	<script>
-    function received() {
-  alert("you report has been received");
-     var modal=document.getElementById('mymodal');
-     modal.style.display="none";
-     var theMessage=document.getElementById('form#messaging');
-     theMessage.reset();
-  return false;
-  }
-    </script>
+		function received() {
+			alert("you report has been received");
+			var modal = document.getElementById('mymodal');
+			modal.style.display = "none";
+			var theMessage = document.getElementById('form#messaging');
+			theMessage.reset();
+			return false;
+		}
+	</script>
 </head>
 
 <body>
 	<div class="container mainbody">
 		<div class="row top">
+			<div class="container main">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Faq</a></li>
+
+				</ul>
+			</div>
 			<h1>WORK INFORMATION</h1>
 		</div>
 
@@ -34,14 +43,16 @@
 				<img src="../img/photo1.jpeg">
 			</div>
 			<div class="col-md-8 about">
-				<h1>Andrew Mugo</h1> <!--ADD NAME HERE-->
-          <ol>
-         		<li><strong>Education:</strong> Hogwarts school of Photography</li>
-          	<li><strong>Profession:</strong> Photographer</li>
-          	<li><strong>Experience:</strong> over 5 years full time freelance photography</li>
-          	<li><strong>City:</strong> Merlin</li>
-          	<li><strong>Phone Number:</strong> 0700789113</li>
-        	</ol> <!--ADD SOME INFO-->
+				<h1>Andrew Mugo</h1>
+				<!--ADD NAME HERE-->
+				<ol>
+					<li><strong>Education:</strong> Hogwarts school of Photography</li>
+					<li><strong>Profession:</strong> Photographer</li>
+					<li><strong>Experience:</strong> over 5 years full time freelance photography</li>
+					<li><strong>City:</strong> Merlin</li>
+					<li><strong>Phone Number:</strong> 0700789113</li>
+				</ol>
+				<!--ADD SOME INFO-->
 			</div>
 		</div>
 
@@ -49,16 +60,22 @@
 			<h1>MY WORK</h1>
 			<p>Some of the work i've done.</p>
 			<div class="col-md-4 workpic">
-				<img src="../img/photo1.jpeg"> <!--ADD WORK RELATED IMAGE HERE-->
-				<p>Camera work.</p><!--brief description-->
+				<img src="../img/photo1.jpeg">
+				<!--ADD WORK RELATED IMAGE HERE-->
+				<p>Camera work.</p>
+				<!--brief description-->
 			</div>
 			<div class="col-md-4 workpic">
-				<img src="../img/photo2.jpeg"><!--ADD WORK RELATED IMAGE HERE-->
-				<p>Wildlife photography.</p><!--brief description-->
+				<img src="../img/photo2.jpeg">
+				<!--ADD WORK RELATED IMAGE HERE-->
+				<p>Wildlife photography.</p>
+				<!--brief description-->
 			</div>
 			<div class="col-md-4 workpic">
-				<img src="../img/photo3.jpeg"><!--ADD WORK RELATED IMAGE HERE-->
-				<p>Family shoots.</p><!--brief description-->
+				<img src="../img/photo3.jpeg">
+				<!--ADD WORK RELATED IMAGE HERE-->
+				<p>Family shoots.</p>
+				<!--brief description-->
 			</div>
 		</div>
 
@@ -73,34 +90,35 @@
 		<div class="row report">
 			<p>Any disputes, report here</p>
 			<button class="report-button" id="message">Report</button>
-            <div class="messagemodal" id="mymodal">
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-6" id="messagebox">
-                        <h3>Describe your issue in brief</h3>
-                          <form id"messaging" method="post" onsubmit="return received()">
-                                <label>Your email </label>
-                                <input type="email" class="form-control">
-                                <label>Your description</label>
-                              <textarea type="text" class="form-control"></textarea>
-                              <button class="btn btn-primary" type="submit">send</button>
-                              <div>
-                                  <ul id="emptymessage">
-                                  </ul>
-                              </div>
-                          </form>
-                    </div>
-                </div>
-            </div>
+			<div class="messagemodal" id="mymodal">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-6" id="messagebox">
+						<h3>Describe your issue in brief</h3>
+						<form id "messaging" method="post" onsubmit="return received()">
+							<label>Your email </label>
+							<input type="email" class="form-control">
+							<label>Your description</label>
+							<textarea type="text" class="form-control"></textarea>
+							<button class="btn btn-primary" type="submit">send</button>
+							<div>
+								<ul id="emptymessage">
+								</ul>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</div>
 </body>
 <script>
-var modal=document.getElementById('mymodal');
-window.onclick = function(event){
-    if(event.target == modal){
-        modal.style.display="none";
-    }
-};
+	var modal = document.getElementById('mymodal');
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	};
 </script>
+
 </html>

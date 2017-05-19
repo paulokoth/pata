@@ -19,12 +19,6 @@ body {
 
 /*NAV BAR START*/
 
-nav {
-  background-color: transparent;
-  overflow: auto;
-  white-space: nowrap;
-}
-
 .main {
   font-family: 'Josefin Sans', cursive;
   font-size: 25px;
@@ -133,13 +127,13 @@ div ul li {
 }
 
 #logintop {
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   font-family: 'Ubuntu', sans-serif;
 }
 
 #signup {
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -251,19 +245,81 @@ div ul li {
 
 /*END OF LANDING*/
 
+/*WELCOME SCREEN*/
+#welcome {
+  display: none;
+  text-align: center;
+  background-color: white;
+  padding-right: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
+}
+#welcome h1 {
+  font-size: 80px;
+  padding-top: 250px;
+  color: #33bbff;
+  text-shadow: 1px 1px 3px black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+}
+
+/*LOGIN*/
+#welcomeback {
+  display: none;
+  text-align: center;
+  background-color: white;
+  padding-right: 0px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
+  color: #33bbff;
+}
+#welcomeback h1 {
+  font-size: 80px;
+  padding-top: 250px;
+  color: #33bbff;
+  text-shadow: 1px 1px 3px black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+}
+
 /*START OF CAROUSEL*/
 * {
   box-sizing: border-box
 }
 
 /* Slideshow container */
+.carousel{
+  background-color: aliceblue;
+}
+.carousel h1{
+  text-align: center;
+  color:#33bbff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:40px;
+}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  text-align: center;
+  background-color: aliceblue;
+  box-shadow: 4px 4px 17px grey;
+}
+.slideshow-container h1 {
+  color: #33bbff;
 }
 .mySlides {
   display: none;
+}
+.fade .cartext {
+  font-size: 30px;
+  color: white;
 }
 
 /* Next & previous buttons */
@@ -330,9 +386,9 @@ div ul li {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3s;
 }
 @-webkit-keyframes fade {
   from {

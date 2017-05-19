@@ -18,12 +18,23 @@
 
 <body>
 
+  <div class="container-fluid">
+    <div class="row" id="welcome">
+      <h1>WELCOME !!</h1>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" id="welcomeback">
+      <h1>WELCOME BACK !!!</h1>
+    </div>
+  </div>
+
   <!---NAV BAR START--->
   <div class="container-fluid top-bar">
     <div class="row">
       <div class="col-xs-8 main">
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Faq</a></li>
@@ -109,50 +120,47 @@
   <!--END OF SIGN UP MODAL-->
 
   <!--START OF CAROUSEL-->
+  <div class="container-fluid carousel">
+    <h1>FEATURED</h1>
+    <div class="slideshow-container thumbnail">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/cooks.png" style="width:100%; height:500px;">
+        <div class="cartext">Chef's</div>
+      </div>
 
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/paul.jpg" style="width:100%; height:500px;">
+        <div class="cartext">Web Engineers</div>
+      </div>
 
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/driver.jpg" style="width:100%; height:500px;">
+        <div class="cartext">Vin Diesels</div>
+      </div>
 
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 5</div>
-      <img src="img/cooks.png" style="width:100%; height:500px;">
-      <div class="cartext">Capion Text</div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img/farmworkers.jpg" style="width:100%; height:500px;">
+        <div class="cartext">Our Top Pick.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img/Dwayne-Johnson-machine-the-rock.jpg" style="width:100%; height:500px;">
+        <div class="cartext">Top trainer.</div>
+      </div>
+
     </div>
+    <br>
 
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 5</div>
-      <img src="img/paul.jpg" style="width:100%; height:500px;">
-      <div class="cartext">Caption Two</div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 5</div>
-      <img src="img/driver.jpg" style="width:100%; height:500px;">
-      <div class="cartext">Caption Three</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 5</div>
-      <img src="img/farmworkers.jpg" style="width:100%; height:500px;">
-      <div class="cartext">Caption Two</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">5 / 5</div>
-      <img src="img/mamanguo.jpg" style="width:100%; height:500px;">
-      <div class="cartext">Caption Three</div>
-    </div>
-
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
   </div>
   <!--END OF CAROUSEL-->
 
@@ -183,7 +191,7 @@
     <br>
 
     <!--CONSTRUCTION-->
-    <a href="plumber.html">
+    <a href="lists/plumber.html">
       <div class="gallery col-md-4 filter construction">
         <img src="img/plumbers.png" class="img-responsive" id="blur">
         <div class="overlay">
@@ -195,7 +203,7 @@
       </div>
     </a>
 
-    <a href="mjengo.html">
+    <a href="lists/mjengo.html">
       <div class="gallery col-md-4 filter construction">
         <img src="img/mjengo.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -244,7 +252,7 @@
     </a>
 
     <!---HOUSEHOLD-->
-    <a href="househelp.html">
+    <a href="lists/househelp.html">
       <div class="gallery col-md-4 filter household">
         <img src="img/househelp.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -256,7 +264,7 @@
       </div>
     </a>
 
-    <a href="mamanguo.html">
+    <a href="lists/mamanguo.html">
       <div class="gallery col-md-4 filter household">
         <img src="img/mamawanguo.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -268,7 +276,7 @@
       </div>
     </a>
 
-    <a href="nanny.html">
+    <a href="lists/nanny.html">
       <div class="gallery col-md-4 filter household">
         <img src="img/nanny.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -294,7 +302,7 @@
 
 
     <!---CATERING--->
-    <a href="cooks.html">
+    <a href="lists/cooks.html">
       <div class="gallery col-md-4 filter catering">
         <img src="img/cooks.png" class="img-responsive" id="blur">
         <div class="overlay">
@@ -306,7 +314,7 @@
       </div>
     </a>
 
-    <a href="cateringequipment.html">
+    <a href="lists/cateringequipment.html">
       <div class="gallery col-md-4 filter catering">
         <img src="img/equipment.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -318,7 +326,7 @@
       </div>
     </a>
 
-    <a href="caterers.html">
+    <a href="lists/caterers.html">
       <div class="gallery col-md-4 filter catering">
         <img src="img/personnel.jpg " class="img-responsive" id="blur">
         <div class="overlay">
@@ -331,7 +339,7 @@
     </a>
 
     <!--MOVING SERVICES-->
-    <a href="drivers.html">
+    <a href="lists/drivers.html">
       <div class="gallery col-md-4 filter transport">
         <img src="img/driver.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -343,7 +351,7 @@
       </div>
     </a>
 
-    <a href="cars.html">
+    <a href="lists/cars.html">
       <div class="gallery col-md-4 filter transport">
         <img src="img/carhire.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -356,7 +364,7 @@
     </a>
 
     <!---IT SKILLS-->
-    <a href="developers.html">
+    <a href="lists/developers.html">
       <div class="gallery col-md-4 filter it-skills">
         <img src="img/devloper.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -369,7 +377,7 @@
     </a>
 
 
-    <a href="networkers.html">
+    <a href="lists/networkers.html">
       <div class="gallery col-md-4 filter it-skills">
         <img src="img/security.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -406,7 +414,7 @@
     </a>
 
     <!--FARMING-->
-    <a href="farmanager.html">
+    <a href="lists/farmanager.html">
       <div class="gallery col-md-4 filter farming">
         <img src="img/farmmanager.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -418,7 +426,7 @@
       </div>
     </a>
 
-    <a href="farmworker.html">
+    <a href="lists/farmworker.html">
       <div class="gallery col-md-4 filter farming">
         <img src="img/farmworkers.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -430,7 +438,7 @@
       </div>
     </a>
 
-    <a href="farmtools.html">
+    <a href="lists/farmtools.html">
       <div class="gallery col-md-4 filter farming">
         <img src="img/farmmachines.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -443,7 +451,7 @@
     </a>
 
     <!--GRAPHIC DESIGNERS-->
-    <a href="graphics.html">
+    <a href="lists/graphics.html">
       <div class="gallery col-md-4 filter graphics">
         <img src="img/posters.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -455,7 +463,7 @@
       </div>
     </a>
 
-    <a href="photographers.html">
+    <a href="lists/photographers.html">
       <div class="gallery col-md-4 filter graphics">
         <img src="img/photographers.jpg" class="graphics" id="photo">
         <div class="overlay">
@@ -467,7 +475,7 @@
       </div>
     </a>
 
-    <a href="pimp.html">
+    <a href="lists/pimp.html">
       <div class="gallery col-md-4 filter graphics">
         <img src="img/pimp.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -492,7 +500,7 @@
     </a>
 
     <!--ENTERTAINMENT-->
-    <a href="internet.html">
+    <a href="lists/internet.html">
       <div class="gallery col-md-4 filter entertainment">
         <img src="img/internet.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -504,7 +512,7 @@
       </div>
     </a>
 
-    <a href="cable.html">
+    <a href="lists/cable.html">
       <div class="gallery col-md-4 filter entertainment">
         <img src="img/cable.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -529,7 +537,7 @@
     </a>
 
     <!--DELIVERY-->
-    <a href="water.html">
+    <a href="lists/water.html">
       <div class="gallery col-md-4 filter delivery">
         <img src="img/maji.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -541,7 +549,7 @@
       </div>
     </a>
 
-    <a href="gas.html">
+    <a href="lists/gas.html">
       <div class="gallery col-md-4 filter delivery">
         <img src="img/gas.jpg" class="img-responsive" id="blur">
         <div class="overlay">
@@ -554,7 +562,7 @@
     </a>
 
     <!---FITNESS-->
-    <a href="fitness.html">
+    <a href="lists/fitness.html">
       <div class="gallery col-md-4 filter fitness">
         <img src="img/trainer.jpg" class="img-responsive" id="blur">
         <div class="overlay">
