@@ -14,8 +14,11 @@
   <script src="js/send.js"></script>
   <srcipt src="CSS/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
     <script>
-    function redirect() {
-  window.location.replace("pata-victor/fip5/index.html");
+    function redirect(event) {
+      var modal=document.getElementById('mymodal');
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
   return false;
 }
 </script>

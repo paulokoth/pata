@@ -3,12 +3,15 @@
 
 <head>
 	<meta charset="utf-8">
+	<!--enables scrolling in phones-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PATA ltd.</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css">
 	<link href="css/cv.css" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/gif" href="cv-img/search-9-512.gif">
+	<!--<link rel="icon" type="image/gif" href="cv-img/search-9-512.gif">-->
 	<script src="cv-js/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
   <script src="cv-js/script.js"></script>
 	<script>
 	function received() {
@@ -58,7 +61,47 @@
 
 		<div class="row contact">
 			<h2>Contact me.</h2>
-			<a href="#"><img src="cv-img/Phone Message-100.png" style="height:40px; width:40px;"></a>
+			<img src="cv-img/Phone Message-100.png" style="height:40px; width:40px;cursor:pointer;" id="calling">
+			<div class="container">
+				<div class="row callsmodal">
+					<div class="col-md-4 col-md-offset-4" id="calls">
+						<div class="row">
+							<p id="phonecall"><span class="glyphicon glyphicon-phone" id="span1"> 0705123455</span></p>
+						</div>
+						<div class="row phonecallwindow">
+							<div class="col-md-5 col-md-offset-2">
+               <p><strong>Calling...<strong></p>
+								 <div class="row" style="margin-top:60%;">
+									 <div class="col-md-4 col-md-offset-6">
+										 <p id="callended">Call ended</p>
+										 <p id="hangup"><span class="glyphicon glyphicon-phone"></span></p>
+									 </div>
+								 </div>
+							</div>
+						</div>
+						<div class="row">
+							<p id="phonemessage"><span class="glyphicon glyphicon-envelope" id="span1"> 0705123455</span></p>
+						</div>
+						<div class="yourMessageModal">
+						<div class="row" id="theMessaging">
+							<div class="col-md-10 col-md-offset-1">
+								<form id="FormMessage">
+									<div class="row">
+									  <span class="glyphicon glyphicon-remove col-md-offset-11" id="close"></span>
+									</div>
+								    <label>Dear sir/madam</label>
+								    <p>To whom it concerns</p>
+								    <textarea class="form-control" type="text" id="yourMessage"></textarea>
+									  <label>From</label>
+									  <input type="email" class="form-control" placeholder="your email...." id="yourEmail">
+								    <button type="submit" class="btn btn-success">Send</button>
+								</form>
+							 </div>
+						 </div>
+					 </div>
+					</div>
+				</div>
+			</div>
 			<a href="https://facebook.com"><img src="cv-img/fb.png"></a>
 			<a href="https://twitter.com"><img src="cv-img/twitter.png"></a>
 			<a href="https://gmail.com"><img src="cv-img/google.png"></a>
@@ -71,7 +114,7 @@
 				<div class="row">
 					<div class="col-md-4 col-md-offset-6" id="messagebox">
 						<h3 style="color:blue;">Describe your issue in breif</h3>
-						  <form id"messaging" method="post" onsubmit="return received()">
+						  <form id="messaging" onsubmit="return received()">
 								<label style="color:black">Your email </label>
 								<input type="email" class="form-control">
 								<label style="color:black">Your description</label>

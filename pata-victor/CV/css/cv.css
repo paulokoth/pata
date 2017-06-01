@@ -12,6 +12,7 @@ h1 {
 p {
   font-family: 'Ubuntu', sans-serif;
   font-size: 17px;
+  word-break: normal;
 }
 
 .top {
@@ -117,7 +118,93 @@ a img:hover{
 	height:40px;
 	width:40px;
 }
+#calls{
+  position: absolute;
+  color:blue;
+  padding: 20px 26px;
+  border: 2px solid aliceblue;
+  border-radius: 10px solid;
+  margin-top: 12%;
+  background-color: aquamarine;
+  cursor:pointer;
 
+}
+.callsmodal{
+   display: none;
+     position: fixed;
+     z-index: 1;
+     padding-top: 100px;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgb(0,0,0);
+     background-color: rgba(0,0,0,0.4);
+ }
+ #span1:hover{
+   color: red;
+   font-size: 20px;
+   font-style: oblique;
+   font-weight: bolder;
+ }
+ .yourMessageModal{
+    display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+  }
+ #theMessaging{
+   position: absolute;
+   border: 1px solid blue;
+   border-radius: 10px;
+   color: blue;
+   margin-left: 35%;
+   margin-top: 5%;
+   background-color: aquamarine;
+   padding: 20px 20px;
+ }
+ #theMessaging span{
+   color: red;
+ }
+.phonecallwindow{
+  display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:blue;
+    background-color:black;
+}
+.phonecallwindow strong {
+  font-size: 60px;
+  color: red;
+  font-weight: bolder;
+}
+#callended{
+  display: none;
+  color: white;
+  font-size: 20px;
+
+}
+#hangup{
+  width: 60px;
+  height:60px;
+  border-radius: 30px;
+  border: 2px solid red;
+  padding :12px 12px;
+  font-size: 25px;
+}
 #messagebox{
   position: absolute;
   background-color: aquamarine;
@@ -141,3 +228,8 @@ a img:hover{
       background-color: rgb(0,0,0);
       background-color: rgba(0,0,0,0.4);
   }
+  /*ensures that there is border in every html tag
+  *{
+    box-sizing: border-box;
+  }
+  */

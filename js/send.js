@@ -37,13 +37,13 @@
           alert(errorMessage);
         }
         console.log(error);
-        document.getElementById('sign-in').disabled = false;
+        //document.getElementById('sign-in').disabled = false;
         // [END_EXCLUDE]
       });
       // [END authwithemail]
     }
     //document.getElementById('sign-in').disabled = true;
-    window.location.replace("pata-victor/fip5/index.html");
+    //window.location.replace("pata-victor/fip5/index.html");
   }
   /**
      * Handles the sign up button press.
@@ -79,7 +79,12 @@
     function logoutUser(){
     firebase.auth().signOut().then(function() {
   // Sign-out successful.
-     confirm('you have sure you want to signed out ?');
+     if(confirm('you have sure you want to signed out ?') == true){
+       return true;
+     }
+     else{
+       return false;
+     }
     }).catch(function(error) {
   // An error happened.
     });
@@ -159,7 +164,9 @@
    //document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
    //document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
  }
- window.onload = function() {
+ $(document).ready(function(){
     initApp();
-
-};
+    $("form#loginform").submit(function(){
+      $(".modal").hide();
+    });
+ });
